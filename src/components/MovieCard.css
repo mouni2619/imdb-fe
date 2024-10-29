@@ -1,0 +1,52 @@
+/* MovieCard.css */
+.movie-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between cards */
+    flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+    padding: 20px; /* Add padding around the container */
+  }
+  
+  .movie-card {
+    flex: 1 1 calc(30% - 20px); /* Each card takes 30% width minus margin */
+    margin: 10px; /* Space between cards */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 300px; /* Optional: maximum width for cards */
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-img {
+    height: 200px; /* Set a specific height */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .movie-title {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    font-weight: bold;
+  }
+  
+  .movie-year {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter color for year */
+  }
+  
+  .card-body {
+    padding: 10px; /* Smaller padding */
+  }
+  
+  .card-footer {
+    padding: 8px; /* Smaller padding */
+    justify-content: space-between;
+  }
+  
+  .text-warning {
+    color: #ffc107; /* Bootstrap warning color */
+  }
+  

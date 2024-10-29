@@ -1,0 +1,65 @@
+/* Dashboard.css */
+
+.dashboard-main-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+
+  
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduced padding for a compact look */
+  
+    background-image: url("https://i.pinimg.com/originals/07/f7/27/07f72772fee4f51adcf8f9aa9fa1a8e0.gif");
+  }
+  
+  .navbar-brand img {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 15px;
+  }
+  
+  .navbar-nav .nav-item a {
+    color: #fff; /* White text for links */
+    font-weight: 500; /* Medium weight for a clean look */
+    font-size: 0.9rem; /* Smaller font size for nav items */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    color: #ffc107; /* Highlight color for hover effect */
+  }
+  
+  .fs-5 {
+    font-size: 1rem;
+  }
+  
+  .outlet {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(186, 213, 193, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem; /* Reduced padding on smaller screens */
+    }
+  
+    .fs-5 {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+  }
+  
